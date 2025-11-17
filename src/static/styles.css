@@ -91,14 +91,35 @@ section h3 {
 
 .participants-section ul {
   margin: 0.5rem 0;
-  padding-left: 1.5rem;
-  list-style-type: disc;
+gx  list-style-type: none; /* hide bullets */
 }
 
 .participants-section li {
   margin: 0.4rem 0;
   font-size: 0.95rem;
   color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.delete-participant:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.participant-item {
+  width: 100%;
 }
 
 .participants-section em {
